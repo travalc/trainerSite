@@ -1,4 +1,4 @@
-$smartphone-max-width: 420px;
+$smartphone-max-width: 450px;
 $tablet-max-width: 775px;
 $desktop-min-width: 776px;
 $off-white: #f7f8f9;
@@ -46,10 +46,15 @@ header {
    padding-left: 40px;
    text-align: left;
  }
- nav {
-   margin-top: 10px;
-   @include smartphone {
-     display: none;
-   }
- }
+}
+
+nav {
+  background-color: $off-white;
+  ul {
+    margin-top: 10px;
+    text-align: justify;
+  }
+  @include smartphone {
+    width: 0px;
+  }
 }
