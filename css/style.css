@@ -24,7 +24,8 @@ nav {
   background-color: #f7f8f9; }
   nav ul {
     margin-top: 10px;
-    text-align: justify; }
+    padding: 0;
+    text-align: center; }
   @media (max-width: 450px) {
     nav {
       width: 0px; } }

@@ -52,7 +52,8 @@ nav {
   background-color: $off-white;
   ul {
     margin-top: 10px;
-    text-align: justify;
+    padding: 0;
+    text-align: center;
   }
   @include smartphone {
     width: 0px;
