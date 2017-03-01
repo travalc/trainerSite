@@ -1,0 +1,55 @@
+$smartphone-max-width: 420px;
+$tablet-max-width: 775px;
+$desktop-min-width: 776px;
+$off-white: #f7f8f9;
+
+@mixin smartphone {
+  @media (max-width: #{$smartphone-max-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$smartphone-max-width + 1px}) and (max-width: #{$tablet-max-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-min-width}) {
+    @content;
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #253F47;
+  font-size: 16px;
+  line-height: 1.25em;
+}
+
+
+ul {
+  list-style: none;
+}
+
+header {
+ background-color: $off-white;
+ #name {
+   float: right;
+   padding-right: 40px;
+   text-align: right;
+ }
+ #logo {
+   float: left;
+   padding-left: 40px;
+   text-align: left;
+ }
+ nav {
+   margin-top: 10px;
+   @include smartphone {
+     display: none;
+   }
+ }
+}

@@ -1,0 +1,28 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #253F47;
+  font-size: 16px;
+  line-height: 1.25em; }
+
+ul {
+  list-style: none; }
+
+header {
+  background-color: #f7f8f9; }
+  header #name {
+    float: right;
+    padding-right: 40px;
+    text-align: right; }
+  header #logo {
+    float: left;
+    padding-left: 40px;
+    text-align: left; }
+  header nav {
+    margin-top: 10px; }
+    @media (max-width: 420px) {
+      header nav {
+        display: none; } }
+
+/*# sourceMappingURL=style.css.map */
