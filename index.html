@@ -12,6 +12,7 @@
   <header>
     <div class = "container-fluid">
       <div id="nameAndLogo" class="row"> <!--displays the title of the site and logo-->
+        <h1 id="openNavigation" class="col-xs-2">&#9776;</h1>
         <h1 id="logo" class="col-xs-3 col-sm-3 col-md-3">Logo Here</h1>
         <h1 id="name" class="col-xs-7 col-sm-7 col-md-7">Name of Trainer</h1>
       </div>
@@ -19,12 +20,14 @@
 
   </header>
 
-  <nav class = "container-fluid"> <!--Navigation,  visible after hamburger icon is clicked on small screens, displayed fully on larger screens-->
+  <nav id="navigation"> <!--Navigation,  visible after hamburger icon is clicked on small screens, displayed fully on larger screens-->
+      <h1 id ="closeNavigation">&times;</h1>
+      <h3 id="navigationTitle">Navigate</h3>
       <ul class="row">
-        <li class="col-md-3 nav-item">Home</li>
-        <li class="col-md-3 nav-item">About</li>
-        <li class="col-md-3 nav-item">Packages And Pricing</li>
-        <li class="col-md-3 nav-item">Contact</li>
+        <li class="col-xs-12 col-sm-3 col-md-3 nav-item">Home</li>
+        <li class="col-xs-12 col-sm-3 col-md-3 nav-item">About</li>
+        <li class="col-xs-12 col-sm-3 col-md-3 nav-item">Packages And Pricing</li>
+        <li class="col-xs-12 col-sm-3 col-md-3 nav-item">Contact</li>
       </ul>
   </nav>
 
@@ -65,5 +68,6 @@
     </section>
   </div>
   <footer></footer><!--Contact info-->
+  <script src="js/view.js"></script>
 </body>
 </html>

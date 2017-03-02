@@ -11,6 +11,14 @@ ul {
 
 header {
   background-color: #f7f8f9; }
+  header #nameAndLogo {
+    margin-bottom: 10px; }
+  @media (max-width: 450px) {
+    header #openNavigation {
+      display: block; } }
+  @media (min-width: 451px) {
+    header #openNavigation {
+      display: none; } }
   header #name {
     float: right;
     padding-right: 40px;
@@ -22,12 +30,34 @@ header {
 
 nav {
   background-color: #f7f8f9; }
+  @media (min-width: 451px) {
+    nav #closeNavigation, nav #navigationTitle {
+      display: none; } }
   nav ul {
-    margin-top: 10px;
+    margin-top: 20;
     padding: 0;
     text-align: center; }
   @media (max-width: 450px) {
     nav {
-      width: 0px; } }
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 0px;
+      background-color: #51048c;
+      color: white; }
+      nav #closeNavigation {
+        text-align: right;
+        padding-right: 3px; }
+      nav #navigationTitle, nav #closeNavigation {
+        display: block; }
+      nav ul {
+        text-align: left; }
+      nav li {
+        color: white; } }
 
 /*# sourceMappingURL=style.css.map */
