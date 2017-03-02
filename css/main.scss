@@ -64,6 +64,11 @@ header {
    padding-left: 40px;
    text-align: left;
  }
+ #name, #logo {
+   @include smartphone {
+     font-size: 14px;
+   }
+ }
 }
 
 nav {
